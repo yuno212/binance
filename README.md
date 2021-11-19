@@ -29,8 +29,7 @@ apiSecret = <yourApiSecret>
 
 # How to use ?  :
 
-### -  Firstly run the program , 
-### -  and then here are the numbers for the several usable functions
+### -  Firstly run the program , and then here are the numbers for the several usable functions
 ### -  1) getCurrentPrice(symbol) --> returns the price of a given ticker example  ('LTCUSDT') output is a float.
 ### -  2) openLongPos(symbol, quantity) --> opens a Long position given the symbol and the quantity you wanna buy.
 ### -  3) openShortPos(symbol , quantity) --> opens a Short position given the symbol and the quantity you wanna short.
