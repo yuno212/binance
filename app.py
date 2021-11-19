@@ -1,4 +1,3 @@
-from os import close
 from binance.client import Client
 import math
 from binance.enums import *
@@ -7,6 +6,7 @@ import random
 def sep():
     print('-------------------------------------------------------------------------------------------------------------------------------------------------------')
 
+   
 apiKey = input('Api key : ')
 sep()
 apiSecret = input('Api secret : ')
