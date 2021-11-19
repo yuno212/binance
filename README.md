@@ -1,4 +1,4 @@
-# Binance tool
+# Binance 
 
 ### - Trading automation tool using Python
 
