@@ -234,11 +234,14 @@ def main():
     sep()
     match method:
         case 1:
+            print('GET CURRENT PRICE SELECTED')
             Symbol = input('Symbol : ')
             x = getCurrentPrice(Symbol)
             print(x)
 
         case 2:
+            print('OPEN LONG POSITION SELECTED !')
+            sep()
             Symbol = input('Symbol')
             sep()
             Quantity = int(input('Quantity : '))
@@ -246,6 +249,8 @@ def main():
             print(x)
 
         case 3:
+            print('OPEN SHORT POSITION SELECTED !')
+            sep()
             Symbol = input('Symbol : ')
             sep()
             Quantity = int(input('Quantity : '))
@@ -253,7 +258,8 @@ def main():
             print(x)
 
         case 4:
-            print('Closing order... provide next creds')
+            print('CLOSE ORDER SELECTED !')
+            sep()
             Symbol = input('Symbol: ')
             sep()
             Id = input('OrderId :')
@@ -261,7 +267,8 @@ def main():
             print(x)
 
         case 5:
-            print('BUY LIMIT SELECTED ! :')
+            print('BUY LIMIT SELECTED ! : ')
+            sep()
             Symbol = input('Symbol : ')
             sep()
             Quantity = int(input('Quantity : '))
@@ -271,6 +278,8 @@ def main():
             print(x)
 
         case 6:
+            print('SELL LIMIT SELECTED !: )
+            sep()
             Symbol = input('Symbol : ')
             sep()
             Quantity = int(input('Quantity : '))
@@ -280,6 +289,7 @@ def main():
             print(x)
 
         case 7:
+            print('OPEN TRADE SELECTED !')
             Symbol = input('Symbol : ')
             sep()
             Position = input('Position : ')
