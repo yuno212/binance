@@ -51,10 +51,6 @@ def openLongPos(symbol, qtity):
         symbol=symbol,
         quantity=qtity)
 
-    client.order_market_buy(
-        symbol=symbol,
-        quantity=qtity)
-
     return x
 
 def openShortPos(symbol, qtity):
@@ -62,10 +58,6 @@ def openShortPos(symbol, qtity):
         symbol = symbol,
         quantity = qtity)
     
-    client.order_market_sell(
-        symbol = symbol,
-        quantity = qtity)
-
     return x
 
 def getPosition(position):
@@ -82,10 +74,6 @@ def closeOrder(symbol, ID):
     x = client.cancel_orders(
         symbol = symbol,
         orderId = ID)
-
-    client.cancel_orders(
-    symbol = symbol,
-    orderId = ID)
     
     return x
     
@@ -95,20 +83,10 @@ def openSpecificBuyLimit(symbol, qtity, price):
     quantity=qtity,
     price=price)
 
-    client.order_limit_buy(
-    symbol=symbol,
-    quantity=qtity,
-    price=price)
-
     return x
 
 def openSpecificSellLimit(symbol, qtity, price):
     x = client.order_limit_sell(
-        symbol=symbol,
-        quantity=qtity,
-        price=price)
-    
-    client.order_limit_sell(
         symbol=symbol,
         quantity=qtity,
         price=price)
