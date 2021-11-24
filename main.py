@@ -142,7 +142,6 @@ def setTakeProfitLevel(symbol, position, target):
 def openTrade(symbol , position):
     quant = int(input('Quantity you wanna short or buy :'))
     currPrice = getCurrentPrice(symbol)
-    #'2.5%' , '7%'
     _risk = input('at how much is your percentage of risk ? : ')
     _target = input('at how much is your percentage of target ? : ')
     #Set up the tp and sl levels
@@ -162,7 +161,8 @@ def openTrade(symbol , position):
     
     elif position == SIDE_SELL:
         takeProfit , stopLoss = tpIfShort , slIfShort
-
+        
+    currPrice = getCurrentPrice(symbol)
     positionDetails  = {
                         'currPrice' : currPrice,
                         'Position' : position,
@@ -173,7 +173,7 @@ def openTrade(symbol , position):
                         }
 
     print(positionDetails)
-
+    
     n = int(input("Margin of error (in hundredths): "))
     n /=100
     
