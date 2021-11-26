@@ -42,7 +42,7 @@ def getCurrentPrice(symbol):
         find = i
         if find['symbol'] == symbol:
             out = find['price']
-            return out
+            return float(out)
     
     return False
 
