@@ -190,10 +190,12 @@ def openTrade(symbol , position):
                 break
 
     elif position == 'SELL':
+        currPrice = getCurrentPrice(symbol)
         openShortPos(symbol, quant)
         id = openShortPos(symbol, quant)
         id = id['orderId']
         while True:
+            currPrice = getCurrentPrice(symbol)
             if currPrice <= takeProfit+n or currPrice >= stopLoss-n:
                 closeOrder(symbol, id)
                 print(closeOrder(symbol, id))
