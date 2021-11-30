@@ -15,7 +15,7 @@ pip install python-binance
 apiKey= <yourApiKey>
 apiSecret = <yourApiSecret>
 ```
-### - API management settigns can be found on : https://www.binance.com/en/my/settings/api-management
+### - API management settings can be found on : https://www.binance.com/en/my/settings/api-management
 
 # Features / Perks :
 
